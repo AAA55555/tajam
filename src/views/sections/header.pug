@@ -1,0 +1,16 @@
+header.header
+  .container
+    nav.nav__wrapper.row.align-items-between
+      .wrapper__logo.row.col-md-2.align-items-center.justify-content-start
+        img.col-md-4(src="icons/logo.png", alt="logo-icon")
+        span.col-md-8 tajam
+      .wrapper__menu.row.col-md-7.offset-md-3
+        ul.row.justify-content-between.align-items-center
+          each val in ['HOME', 'ABOUT', 'EXPERTISE', 'TEAMS', 'WORKS', 'PEOPLE', 'SAY','CONTACT']
+            li.col
+              a(href="#")=val
+    .header__title We Are Awesome Creative Agency
+    .divider.row.justify-content-center
+      div
+    .header__subtitle.row.offset-1.col-md-10.offset-1 This is Photoshop's version  of Lorem Ipsum. Proin gravidanibhvel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,nisi elitconsequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit ametnibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+    button.btn LEARN MORE

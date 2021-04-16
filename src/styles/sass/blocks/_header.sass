@@ -1,0 +1,79 @@
+.header
+  background: url('../img/bg-header.jpg') center center / cover no-repeat
+  .nav
+    &__wrapper
+      padding-top: 15px
+      height: 50px
+      .wrapper
+        &__logo
+          img
+            padding-right: 0
+            width: auto
+          span
+            background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
+            background-clip: text
+            color: #ffffff
+            font-family: $font-family-Roboto
+            font-size: 30px
+            font-weight: 100
+            padding-left: 11px
+            -webkit-text-fill-color: transparent
+            //TODO посмотреть толщину шрифта
+        &__menu
+          padding: 0
+          ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+            li
+              text-align: right
+              padding: 0
+              a
+                color: #ffffff
+                font-family: $font-family-Roboto
+                font-size: 13px
+                font-weight: 700
+                text-align: right
+                text-transform: uppercase
+                padding: 0
+                
+                &:hover
+                  color: #00e0d0
+                  letter-spacing: 0.33px
+                  letter-spacing: 0.33px
+                
+  &__title
+    margin-top: 163px
+    color: #ffffff
+    font-family: $font-family-PlayfairDisplay
+    font-size: 32px
+    font-weight: 400
+    text-align: center
+    letter-spacing: 0.32px
+    text-transform: capitalize
+  &__subtitle
+    margin-top: 30px
+    color: #ffffff
+    font-family: $font-family-Roboto
+    font-weight: 300
+    line-height: 24px
+    text-align: center
+    letter-spacing: 0.7px //TODO разобраться со шрифтами
+  .btn
+    +btn
+    margin-top: 50px
+    padding-bottom: 207px
+.divider
+  div
+    margin-top: 21px
+    width: 50px
+    height: 1px
+    background-color: #00e0d0
+  
+
+@media screen and ( min-width: 768px )
+  .wrapper
+        &__logo
+          img
+            height: 50px !important
+  
