@@ -1,0 +1,156 @@
+.header
+  position: relative
+  margin-top: -163px
+  padding-bottom: 207px
+  background: url('../img/bg-header.jpg') center center / cover no-repeat
+  .nav
+    &__wrapper
+      padding-top: 15px
+      position: fixed
+      .wrapper
+        &__logo
+          position: fixed
+          display: flex
+          align-items: center
+          img
+            padding: 0
+            max-width: 44px
+            width: 100%
+          span
+            background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
+            background-clip: text
+            color: #ffffff
+            font-family: $font-family-Roboto
+            font-size: 30px
+            font-weight: 100
+            -webkit-text-fill-color: transparent
+            width: auto
+            padding-left: 11px
+        &__menu
+          display: flex
+          justify-content: flex-end
+          align-items: center
+          position: fixed
+          height: 50px
+          .menu
+            &__items
+              list-style-type: none
+              display: flex
+            &__item
+              text-align: center
+              padding-left: 10px
+              padding-right: 10px
+              &:nth-child(1)
+                padding-left: 0px
+              &:nth-last-child(1)
+                padding-right: 0px
+                
+              a
+                color: #ffffff
+                font-family: $font-family-Roboto
+                font-size: 13px
+                font-weight: 700
+                text-align: right
+                text-transform: uppercase
+                
+                
+                
+                &:hover
+                  color: #00e0d0
+  &__title
+    margin-top: 163px
+    padding-top: 163px
+    color: #ffffff
+    font-family: $font-family-PlayfairDisplay
+    font-size: 32px
+    font-weight: 400
+    letter-spacing: 0.32px
+    text-transform: capitalize
+    text-align: center
+  &__subtitle
+    margin: 0 auto
+    margin-top: 30px
+    color: #ffffff
+    font-family: $font-family-Roboto
+    font-weight: 300
+    line-height: 24px
+    text-align: center
+    letter-spacing: 0.7px
+    
+  .btn
+    +btn
+    margin-top: 50px
+    &__wrapper
+      
+.divider
+  margin-top: 21px
+  width: 50px
+  height: 1px
+  background-color: #00e0d0
+  margin: 0 auto
+  margin-top: 21px
+
+.hamburger
+  display: none
+
+@media screen and ( min-width: 768px )
+  .nav
+    &__wrapper
+      .wrapper
+        &__menu
+          .menu
+            &__items
+
+@media screen and ( min-width: 576px ) and ( max-width: 768px )
+  .nav
+    &__wrapper
+      .wrapper
+        &__menu
+          position: relative !important
+          height: 50px
+          .menu
+            &__items
+              position: fixed
+              flex-direction: column
+              justify-content: start
+              align-items: center
+              top: 0
+              left: -100%
+              width: 50%
+              height: 100vh
+              padding: 20px 15px
+              background: rgba(0, 0, 0, 0.8)
+              transition: .6s all
+              margin-top: 0
+            &__item
+              padding: 10px !important
+              border: none
+            &_active
+              left: 0
+      
+  .hamburger
+    display: block
+    position: absolute
+    right: 10px
+    top: 50%
+    -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+    width: 26px
+    height: 12px
+    &_active 
+      span
+        margin-top: -2px
+        &:nth-child(1)
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg);
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      margin-bottom: 2px
+      -webkit-transition: 0.5s all
+      transition: 0.5s all

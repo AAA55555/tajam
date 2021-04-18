@@ -1,0 +1,74 @@
+.story
+  padding-top: 70px
+  padding-bottom: 70px
+  &__wrapper
+  &__img-wrapper
+    max-height: 230px
+    height: 100%
+    max-width: 235px
+    width: 100%
+    padding: 0
+    img
+      height: 100%
+      width: 100%
+  &__text-wrapper
+  &__text-title
+    h2 
+      color: #413d4b
+      font-family: $font-family-PlayfairDisplay
+      font-size: 22px
+      font-weight: 700
+      text-align: left
+      text-transform: uppercase
+      letter-spacing: 1.1px
+      margin: 0
+  &__text-descr
+    margin-top: 28px
+    p
+      opacity: 0.75
+      color: #413d4b
+      font-family: $font-family-Roboto
+      font-weight: 300
+      line-height: 22px
+      text-align: left
+      letter-spacing: 0.42px
+      margin-top: 35px
+      margin-bottom: 0
+      &:nth-child(1)
+        margin-top: 0
+  .btn
+    +btn
+    margin: 0
+    margin-top: 31px     
+    transition: .5s all
+    &:hover
+      background: #30235f
+      
+    
+@media ( min-width: 768px ) and ( max-width: 991px )
+  .story
+    &__img-wrapper
+      max-width: 22.5%
+      img
+        max-height: 229px
+        max-width: 235px
+
+@media ( min-width: 320px ) and ( max-width: 767px )
+  .story
+    padding-top: 40px
+    padding-bottom: 40px
+    &__wrapper
+      flex-direction: column
+    &__img-wrapper
+      max-width: 100px
+      margin: 0 auto
+    &__text-title
+      margin-top: 20px
+    &__text-descr
+      p
+        margin-top: 15px
+        &:nth-child(1)
+          margin-top: 0
+    .btn
+      margin-left: auto
+      margin-right: auto

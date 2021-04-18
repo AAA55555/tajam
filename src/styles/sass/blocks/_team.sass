@@ -1,0 +1,93 @@
+.team
+  padding-top: 71px
+  padding-bottom: 69px
+  background: url('../img/bg-team.jpg') center center / cover no-repeat
+  .divider
+      margin-top: 18px
+      background-color: #413d4b
+      opacity: 0.3
+  &__title
+    h2
+      color: #ffffff
+      font-family: $font-family-PlayfairDisplay
+      font-size: 22px
+      font-weight: 700
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 1.1px
+      margin: 0
+  &__subtitle
+    margin-bottom: 0
+    h3
+      opacity: 0.75
+      color: #f9f9f9
+      font-family: $font-family-PlayfairDisplay
+      font-size: 14px
+      font-weight: 400
+      text-align: center
+      letter-spacing: 1.05px
+      margin-bottom: 0
+      margin-top: 16px
+  &__items
+    margin-top: 47px
+    display: flex
+    justify-content: center
+  &__text-wrapper
+    
+    padding-bottom: 28px
+  &__item
+    width: 320px
+    height: 229px
+    // width: calc(100% / 4)
+    height: auto
+    padding: 0
+    margin: 10px
+    border: 1px solid rgba(225, 225, 225, 0.5)
+    &:nth-last-child(1)
+      
+  &__title-item
+    color: #ffffff
+    font-family: $font-family-Roboto
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.7px
+    margin-top: 20px
+  &__job-item
+    opacity: 0.7
+    color: #fafafa
+    font-family: $font-family-Roboto
+    font-size: 13px
+    font-weight: 300
+    text-align: center
+    text-transform: uppercase
+    margin-top: 12px
+  &__img-wrapper 
+    width: 220px
+    width: 100%
+    height: auto
+    margin: 0 auto
+    img
+      width: 100%
+      object-fit: cover
+  &__text
+    color: #f3f3f3
+    font-family: $font-family-Roboto
+    font-weight: 300
+    text-align: center
+    letter-spacing: 0.7px
+    margin-top: 70px
+  .btn
+    margin-top: 26px
+
+@media ( min-width: 320px ) and (max-width: 767px)
+  .team
+    &__items
+      flex-wrap: wrap
+      margin-top: 10px
+    &__title
+      h2 
+        font-size: 20px
+    &__text
+      font-size: 12px
+      margin-top: 30px

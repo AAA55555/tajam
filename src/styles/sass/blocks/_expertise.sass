@@ -1,0 +1,95 @@
+.expertise
+  padding-top: 72px
+  padding-bottom: 101px
+  &__wrapper
+    .divider
+      margin-top: 18px
+      background-color: #413d4b
+      opacity: 0.3
+  &__title
+    h2
+      color: #413d4b
+      font-family: $font-family-PlayfairDisplay
+      font-size: 22px
+      font-weight: 700
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 1.1px
+      margin-bottom: 16px
+  &__subtitle
+    margin-bottom: 0
+    h3
+      opacity: 0.75
+      color: #2f2d35
+      font-family: $font-family-PlayfairDisplay
+      font-size: 14px
+      font-weight: 400
+      text-align: center
+      letter-spacing: 1.05px
+      margin-bottom: 0
+  &__items
+    padding-top: 48px
+    max-width: 954px
+    justify-content: center
+    margin: 0 auto
+  &__item
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: calc( 100% / 3)
+      padding: 32px 33px 39px 33px
+      border-right: 1px solid #f3f3f3
+      border-bottom: 1px solid #f3f3f3
+      &:nth-last-child(3n+1)
+        border-right: none
+      &:nth-last-child(-n+3)
+        border-bottom: none
+      .img-wrapper
+        max-width: 50px
+        max-height: 50px
+        img
+          width: 100%
+          height: 100%
+    &-title
+      color: #413d4b
+      font-family: $font-family-Roboto
+      font-weight: 700
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 0.7px
+      margin-top: 35px
+      font-size: 14px
+    &-descr
+      opacity: 0.75
+      color: #333333
+      font-family: $font-family-Roboto
+      font-weight: 300
+      line-height: 22px
+      text-align: center
+      letter-spacing: 0.7px
+      margin-top: 25px
+
+@media ( min-width: 768px ) and (max-width: 991px)
+  .expertise
+    &__item
+      &-wrapper
+        width: 318px
+        padding: 20px 10px 34px 10px
+        justify-content: space-between
+        border-right: 1px solid #f3f3f3 !important
+        border-bottom: 1px solid #f3f3f3 !important
+        &:nth-last-child(-n+2)
+          border-bottom: none !important
+        &:nth-child(even)
+          border-right: none !important
+
+@media ( min-width: 320px ) and (max-width: 767px)
+  .expertise
+    &__item
+      &-wrapper
+        width: 318px
+        border-right: none
+        border-bottom: 1px solid #f3f3f3 !important
+        &:nth-last-child(1)
+          border-bottom: none !important

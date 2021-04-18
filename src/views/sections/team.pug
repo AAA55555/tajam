@@ -1,0 +1,20 @@
+section.team
+  .container
+    .team__title
+      h2 MEET OUR AMAZING TEAM
+    .team__subtitle
+      h3 Lorem ipsum dolor sit amet proin gravida nibh vel velit
+    .divider
+    .team__items
+      -let arr = [{img: 'img/team/1.jpg', name: 'SEMF UCUK', job: 'CEO&FOUNDER'}, {img: 'img/team/2.jpg', name: 'DIK ADALIN',job:'ENGINEERING'}, {img: 'img/team/3.jpg', name: 'JENG KOL',job:'DESIGNER'}, {img: 'img/team/4.jpg', name: 'PET ROMAK',job:'MARKETING'}]
+      each elem, i in arr 
+        .team__item
+          .team__img-wrapper
+            img(src=elem.img, alt="icon")
+          .team__text-wrapper
+            .team__title-item #{elem.name}
+            .team__job-item #{elem.job}
+    .team__text Become part of our dream team, let’s join us ! 
+    .btn__wrapper
+      button.btn WE ARE HIRING
+      
