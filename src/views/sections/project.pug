@@ -5,11 +5,11 @@ section.project
         h2 OUR WORKS
         .wrapper 
           a(href="#")  See All Project in dribbble
-          .wrapper__pointer
-            span 
-            span 
+            i.fa.fa-chevron-right
   .project__items
-    -for (let x = 0; x <= 13; x++)
-      img(src='icons/project/1.png', alt="icon-project")
+    each val in ['icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg','icons/project/3.jpg', 'icons/project/2.jpg', 'icons/project/1.jpg', 'icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg','icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg']
+      a(href="#" class="project-img") 
+        img(src=val, alt="icon-project" class="project-img")
   .btn__wrapper.col-xs-2
       button.btn LEARN MORE
+        

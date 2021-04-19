@@ -5,10 +5,10 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Тестовое задание
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     //- <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    //- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
     link(rel="stylesheet", href="css/style.min.css")
   body 
     include sections/header.pug
@@ -17,5 +17,9 @@ html(lang="ru")
     include sections/expertise.pug
     include sections/team.pug
     include sections/project.pug
+    include sections/testimonial.pug
+    include sections/form.pug
 
+  script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+  script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js") 
   script(src="js/script.js") 
