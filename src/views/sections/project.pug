@@ -3,13 +3,15 @@ section.project
     .project__wrapper 
       .project__title 
         h2 OUR WORKS
-        .wrapper 
+        .project__next 
           a(href="#")  See All Project in dribbble
-            i.fa.fa-chevron-right
+            .arrow__next-wrapper
+              span.arrow-top 
+              span.arrow-bottom 
   .project__items
     each val in ['icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg','icons/project/3.jpg', 'icons/project/2.jpg', 'icons/project/1.jpg', 'icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg','icons/project/1.jpg', 'icons/project/2.jpg', 'icons/project/3.jpg']
       a(href="#" class="project-img") 
         img(src=val, alt="icon-project" class="project-img")
   .btn__wrapper.col-xs-2
-      button.btn LEARN MORE
+      button.btn LOAD MORE
         

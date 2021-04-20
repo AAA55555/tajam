@@ -2,6 +2,7 @@
   padding-top: 72px
   padding-bottom: 70px
   &__title
+    margin-bottom: 12px
     h2
       color: $text-color
       font-family: $font-family-Roboto
@@ -10,9 +11,11 @@
       text-align: center
       text-transform: uppercase
       letter-spacing: 1.1px
+      margin: 0
   form
     margin-top: 35px
     input
+      display: block
       border: 1px solid rgba(0, 0, 0, 0.1)
       opacity: 0.5
       color: $text-color
@@ -21,6 +24,13 @@
       text-align: left
       letter-spacing: 0.7px
       padding: 18px 18px 17px 18px
+      margin-top: 23px
+      width: 100%
+      &:nth-child(1)
+        margin-top: 0
+      &:focus
+        border: none
+        outline: 1px solid rgba(0, 0, 0, 0.1)
     .name
     .email
     .subject
@@ -33,7 +43,19 @@
       font-weight: 300
       text-align: left
       letter-spacing: 0.7px
+      resize: none
+      margin-top: 23px
+      width: 100%
+      &:focus
+        border: none
+        outline: 1px solid rgba(0, 0, 0, 0.1)
   .btn
-    &__wrapper
-      width: 120px
-      height: 40px
+    width: 120px !important
+    margin-top: 21px
+    &:hover
+      background: #30235f
+      
+@media ( min-width: 320px ) and ( max-width: 767px )
+  .form
+    &__title
+      margin-bottom: 0

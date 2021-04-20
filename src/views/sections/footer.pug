@@ -1,0 +1,36 @@
+footer.footer
+  .container
+    .footer__wrapper
+      .footer__items.row
+        .footer__item.col-md-4
+          .wrapper__logo
+            img(src="icons/logo.png", alt="logo-icon")
+            span tajam
+          .wrapper__text lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+        .footer__item.col-md-4
+          .item__title 
+            h2 OUR STUDIO
+          .item__descr 
+            .descr
+              a(href="https://goo.gl/maps/QytnVicecJGpNFU58")
+                img(src="icons/marker-footer.svg", alt="icon-marker") 
+                .text Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+            .descr
+              a(href="tel:+622122243333")
+                img(src="icons/phone-footer.svg", alt="icon-phone") 
+                .text (+62) 21-2224 3333
+        .footer__item.col-md-4
+          .item__title 
+            h2 STAY IN TOUCH
+          .item__descr 
+            form.subscribe(action="#") 
+              input.email#email(type="email" placeholder="Subscribe our newsletter" required name="email")
+              button 
+                img(src="", alt="")
+            .item__socials 
+              each val in ['icons/socials/1-facebook.svg', 'icons/socials/2-twitter.svg', 'icons/socials/3-dribbble.svg', 'icons/socials/4-instagram.svg', 'icons/socials/5-google.svg', 'icons/socials/6-youtube.svg']
+                a.item__link(href="#") 
+                  img(src=val, alt="icon-social")
+
+            
+            

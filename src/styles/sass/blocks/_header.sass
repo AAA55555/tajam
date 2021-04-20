@@ -5,23 +5,6 @@
   .nav
     &__wrapper
       .wrapper
-        &__logo
-          display: flex
-          align-items: center
-          img
-            padding: 0
-            max-width: 44px
-            width: 100%
-          span
-            background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
-            background-clip: text
-            color: #ffffff
-            font-family: $font-family-Roboto
-            font-size: 30px
-            font-weight: 100
-            -webkit-text-fill-color: transparent
-            width: auto
-            padding-left: 11px
         &__menu
           display: flex
           justify-content: flex-end
@@ -65,7 +48,24 @@
     line-height: 24px
     text-align: center
     letter-spacing: 0.7px
-    
+.wrapper
+  &__logo
+    display: flex
+    align-items: center
+    img
+      padding: 0
+      max-width: 44px
+      width: 100%
+    span
+      background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
+      background-clip: text
+      color: #ffffff
+      font-family: $font-family-Roboto
+      font-size: 30px
+      font-weight: 100
+      -webkit-text-fill-color: transparent
+      width: auto
+      padding-left: 11px
 .btn
   +btn
   margin-top: 50px

@@ -3,12 +3,11 @@ section.form
     .wrapper.row
       .form__title
         h2 GIVE US A GOOD NEWS
+    .row    
       form.col-md-6.offset-md-3(action="#")
-        .row
-          input.name#name(type="text", name="name" placeholder = "Name" required)
-          input.email#email(type="email", name="email" placeholder = "Email" required)
-          input.subject#subject(type="text", name="subject" placeholder = "Subject" required)
-          textarea.message#message(name="message", cols="30", rows="10" placeholder = "Your Massage" disabled) 
+        input.name#name(type="text", name="name" placeholder = "Name" required)
+        input.email#email(type="email", name="email" placeholder = "Email" required)
+        input.subject#subject(type="text", name="subject" placeholder = "Subject" required)
+        textarea.message#message(name="message", cols="30", rows="10" placeholder ="Your Massage") 
         .btn__wrapper
           button.btn SUBMIT
-        //TODO запрет на растягивание 

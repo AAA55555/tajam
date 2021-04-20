@@ -15,39 +15,41 @@
       text-align: left
       text-transform: uppercase
       letter-spacing: 1.1px
-    .wrapper
-      a
-        color: $text-color
-        font-family: $font-family-Roboto
-        font-weight: 300
-        text-align: right
-        letter-spacing: 0.7px
-      &__pointer
+  &__next 
+    a
+      color: $text-color
+      font-family: $font-family-Roboto
+      font-weight: 300
+      text-align: right
+      letter-spacing: 0.7px
+    .arrow
+      &__next-wrapper
         position: relative
-        height: 13px
-        display: none
+        height: auto
+        width: auto
         align-items: center
         justify-content: space-between
         cursor: pointer
-        span
-          width: 13px
-          height: 1px
-          background: $text-color
-          position: absolute
-          &:nth-child(1)
-            transform: rotate(-45deg)
-            position: absolute
-            background-color: transparent
-            top: 10px
-            left: 0
-            width: 40px
-            height: 10px
-            display: block
-            transform: rotate(35deg)
-            float: right
-            border-radius: 2px
-          &:nth-child(2)
-            transform: rotate(45deg)
+        top: -9px
+        right: -182px
+      &-top
+        width: 9px
+        height: 1px
+        background: $text-color
+        position: absolute
+        transform: rotate(-45deg)
+        top: 3px
+        left: 0
+        border-radius: 3px
+      &-bottom
+        width: 9px
+        height: 1px
+        background: $text-color
+        position: absolute
+        top: -3px
+        left: 0
+        transform: rotate(45deg)
+        border-radius: 3px
   &__items
     display: grid
     grid-template-rows: repeat(2, minmax(100px, 200px))
@@ -55,6 +57,9 @@
     grid-auto-columns: minmax(100px, 267px)
     grid-auto-rows: minmax(100px, 200px)
     justify-content: center
+    max-width: 1605px
+    width: 100%
+    margin: 0 auto
     a
       max-height: 200px 
       max-width: 267px
@@ -65,6 +70,7 @@
   .btn
     margin-top: 70px
     transition: .5s all
+    width: 140px !important
     &:hover
       background: #30235f
       
